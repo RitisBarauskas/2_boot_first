@@ -1,13 +1,14 @@
-print('Start')
+class Student:
+    def __init__(self, name: str, second_name: str = 'Бесфамильный') -> None:
+        self.name = name
+        self.second_name = second_name
 
-for i in range(19):
-    if i == 0:
-        print('Hello, World')
-
-    print(f'Сейчас идет {i} итерация')
-
-    if i % 2 == 0:
-        print('Делим!')
+    def __str__(self) -> str:
+        return f'Hello, {self.name}'
 
 
-print('Finish!')
+names = ['John', 'Jane', 'Jack']
+
+for name in names:
+    student = Student(name)
+    print(student)
