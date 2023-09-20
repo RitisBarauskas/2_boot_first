@@ -1,9 +1,13 @@
 print('Start')
 
 for i in range(19):
-    print('Hello, World')
+    if i == 0:
+        print('Hello, World')
+
+    print(f'Сейчас идет {i} итерация')
+
     if i % 2 == 0:
-        print('Done!')
+        print('Делим!')
 
 
 print('Finish!')
